@@ -1,0 +1,143 @@
+<html>
+<head>
+    <title>Exercise 48 - Trần Ngọc Bảo Vy</title>
+</head>
+<body style="background-color:rgb(121, 202, 226)">
+    <form name="Registration Form">
+        <header align="center">
+            <img src="../Exercise48/ex48/images/Jackson.gif">
+            <h2>Registration Form</h2>
+            <p>Register your Jackson Electronics product here</p>
+        </header>
+        <table width=100%>
+            <tr>
+                <td>First Name:</td>
+                <td>
+                    <input type="text" name="firstname"/>
+                    Last Name: 
+                    <input type="text" name="lastname"/>
+                </td>
+            </tr>
+            <tr>
+                <td>Address #1:</td>
+                <td>
+                    <input type="text" name="address1"/>
+                </td>
+            </tr>
+            <tr>
+                <td>Address #2:</td>
+                <td>
+                    <input type="text" name="address2"/>
+                </td>
+            </tr>
+            <tr>
+                <td>City:</td>
+                <td>
+                    <input type="text" name="cityname"/>
+                    State: 
+                    <input type="text" name="statename"/>
+                    Zip: 
+                    <input type="text" name="zip"/>
+                </td>
+            </tr>
+            <tr>
+                <td>Country:</td>
+                <td>
+                    <input type="text" name="country"/>
+                </td>
+            </tr>
+        </table>
+        <hr/>
+        <table cellspacing=5px>
+            <tr>
+                <td>Product:</td>
+                <td>
+                    <select>
+                        <option value="1">ScanMaster</option>
+                        <option value="2">Bánh tráng tóp mỡ</option>
+                        <option value="3">Matcha Latte</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Date Purchased:</td>
+                <td>
+                    <input type="datetime" name="datepurchased"/>
+                </td>
+            </tr>
+            <tr>
+                <td>Serial#:</td>
+                <td>
+                    <input type="text" name="serial"/>
+                </td>
+            </tr>
+            <tr>
+                <td> Used for:</td>
+                <td>
+                    <input type="radio" name="usedfor1" id="uf1"/>
+                    <label for="uf1">Home</label>
+                </td>
+                <td>
+                    <input type="radio" name="usedfor2" id="uf2"/>
+                    <label for="uf2">Educational Institution</label>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>
+                    <input type="radio" name="usedfor3" id="uf3"/>
+                    <label for="uf3">Business</label>
+                </td>
+                <td>
+                    <input type="radio" name="usedfor4" id="uf4"/>
+                    <label for="uf4">Other</label>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>
+                    <input type="radio" name="usedfor5" id="uf5"/>
+                    <label for="uf5">Government</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td> System (check all that apply:):</td>
+                <td>
+                    <input type="checkbox" name="system1" id="s1"/>
+                    <label for="s1">Windows</label>
+                </td>
+                <td>
+                    <input type="checkbox" name="system2" id="s2"/>
+                    <label for="s2">UNIX</label>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>
+                    <input type="checkbox" name="system3" id="s3"/>
+                    <label for="s3">Macintosh</label>
+                </td>
+                <td>
+                    <input type="checkbox" name="system4" id="s4"/>
+                    <label for="s4">Other</label>
+                </td>
+            </tr>
+        </table>
+        <br/>
+
+        <table width=100%>
+            <tr>
+                <td>Comments?</td>
+                <td>
+                    <textarea name="comments"></textarea>
+                </td>
+            </tr>
+        </table>
+        <p align="center">
+            <input type="button" value="Click to register" onclick="alert('Thanks for registration')"/>
+            <input type="reset" value="Click to cancel"/>
+        </p>
+    </form>
+</body>
+</html>
