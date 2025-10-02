@@ -1,0 +1,96 @@
+<html>
+<head>
+    <title>Exercise 49 - Trần Ngọc Bảo Vy</title>
+</head>
+<body style="background-color:aqua">
+    <h1 style="color:red">Online Classifieds Search Form</h1>
+    <hr/>
+    <form>
+        <ol type="1">
+            <li><b>Search for a classified in the following sections:</b></li>
+            <br/>
+                <table>
+                    <tr>
+                        <td>
+                            <input type="radio" name="searchforsections1" id="s1"/>
+                            <label for="s1">Employment</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="searchforsections2" id="s2"/>
+                            <label for="s2">Personal</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" name="searchforsections3" id="s3"/>
+                            <label for="s3">For Sale</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="searchforsections4" id="s4"/>
+                            <label for="s4">Miscellaneous</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" name="searchforsections5" id="s5"/>
+                            <label for="s5">Housing</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="searchforsections6" id="s6"/>
+                            <label for="s6">All of the above</label>
+                        </td>
+                    </tr>
+                </table>
+
+            <br/>
+            <li><b>Search for the following publications:</b></li>
+                <table>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="searchforpublications1" id="sp1"/>
+                            <label for="sp1">Midwest times</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" name="searchforpublications2" id="sp2"/>
+                            <label for="sp2">Modern News</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" name="searchforpublications3" id="sp3"/>
+                            <label for="sp3">Employment Today</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="searchforpublications4" id="sp4"/>
+                            <label for="sp4">Great Lakes Classifieds</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" name="searchforpublications5" id="sp5"/>
+                            <label for="sp5">Middleton Daily</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" name="searchforpublications6" id="sp6"/>
+                            <label for="sp6">Cashtown Daily News</label>
+                        </td>
+                    </tr>
+                </table>
+
+            <br/>
+            <li><b>From to</b><input type="date" name="beginningdate"/>
+                to 
+                <input type="date" name="endingdate"/>
+            </li>
+
+            <br/>
+            <li><b>Enter a few keywords to describe the classified.</b></li>
+            <br/>
+                <input type="text" name="enterkeywords" size="100"/>
+            <br/><br/>
+            <li><b>Click one of the options below:</b></li>
+                <input type="image" src="../Exercise49/ex49/Search.gif" onclick="alert('Search Simulation');return false"/>
+                <input type="image" src="../Exercise49/ex49/Help.gif" onclick="window.open('https://itbclub.uel.edu.vn','_blank'); return false;"/>
+                <input type="image" src="../Exercise49/ex49/Cancel.gif" onclick="this.form.reset();return false"/>
+        </ol>
+    </form>
+</body>
+</html>
