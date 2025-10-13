@@ -1,0 +1,52 @@
+<html>
+<head>
+    <title>Exercise 53 - Product Result - Trần Ngọc Bảo Vy</title>
+</head>
+<body>
+    <h2 align="center">Product Summary</h2>
+    <table align="center" border="1" width="80%">
+        <tr>
+            <th>Part Number</th>
+            <th>Description</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+        </tr>
+        <tr>
+            <td>C112</td>
+            <td>Mouse</td>
+            <td id="qty1"></td>
+            <td id="it1"></td>
+        </tr>
+        <tr>
+            <td>B124</td>
+            <td>Keyboard US</td>
+            <td id="qty2"></td>
+            <td id="it2"></td>
+        </tr>
+        <tr>
+            <td>U125</td>
+            <td>USB KingMax</td>
+            <td id="qty3"></td>
+            <td id="it3"></td>
+        </tr>
+        <tr>
+            <td colspan="3" align="right">Total:</td>
+            <td id="total"></td>
+        </tr>
+    </table>
+    <script>
+        const params= new URLSearchParams(window.location.search)
+
+        document.getElementById("qty1").innerText=params.get("quantity1")
+        document.getElementById("qty2").innerText=params.get("quantity2")
+        document.getElementById("qty3").innerText=params.get("quantity3")
+
+        document.getElementById("it1").innerText=params.get("itemTable1")
+        document.getElementById("it2").innerText=params.get("itemTable2")
+        document.getElementById("it3").innerText=params.get("itemTable3")
+
+        document.getElementById("total").innerText=params.get("total")
+
+    </script>
+</body>
+</html>
