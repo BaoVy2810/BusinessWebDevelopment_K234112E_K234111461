@@ -1,0 +1,56 @@
+<html>
+<head>
+    <title>Exercise 52 - Contact Result - Trần Ngọc Bảo Vy</title>
+</head>
+<body>
+    <h4>Contact Information</h4>
+    <table border="1"
+           style="width:100%">
+        <tr>
+            <th>Full Name</th>
+            <td>
+                <script>
+                    fullname=decodeURIComponent(location.search.split("fullname=")[1].split("&")[0])
+                    document.write(fullname)
+                </script>
+            </td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td>
+                <script>
+                    email=decodeURIComponent(location.search.split("email=")[1].split("&")[0])
+                    document.write(email)
+                </script>
+            </td>
+        </tr>
+        <tr>
+            <th>Send to</th>
+            <td>
+                <script>
+                    receiver=decodeURIComponent(location.search.split("receiver=")[1].split("&")[0])
+                    document.write(receiver)
+                </script>
+            </td>
+        </tr>
+        <tr>
+            <th>Title</th>
+            <td>
+                <script>
+                    title=decodeURIComponent(location.search.split("title=")[1].split("&")[0])
+                    document.write(title)
+                </script>
+            </td>
+        </tr>
+        <tr>
+            <th>Content</th>
+            <td>
+                <script>
+                    content=decodeURIComponent(location.search.split("content=")[1].split("&")[0])
+                    document.write(content)
+                </script>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
