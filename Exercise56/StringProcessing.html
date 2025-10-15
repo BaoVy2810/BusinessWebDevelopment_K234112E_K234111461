@@ -1,0 +1,111 @@
+<html>
+<head>
+    <title>Exercise 56 - Trần Ngọc Bảo Vy</title>
+    <script src='StringFunctions.js'></script>
+    <style>
+        button{
+            width: 100%;
+        }
+    </style>
+    <script>
+        function Result_enterData()
+        {
+            input=enterData(my_form.InputData.value)
+            Result.value=input            
+        }
+        function Result_countUpperNumber()
+        {
+            input=countUpperNumber(my_form.InputData.value)
+            Result.value=input 
+        }
+        function Result_Uppercase()
+        {
+            input=Uppercase(my_form.InputData.value)
+            Result.value=input       
+        }
+        function Result_oneWordPerLine()
+        {
+            input=oneWordPerLine(my_form.InputData.value)
+            Result.value=input  
+        }
+        function Result_Lowercase()
+        {
+            input=Lowercase(my_form.InputData.value)
+            Result.value=input  
+        }
+        function Result_WordCount()
+        {
+            input=WordCount(my_form.InputData.value)
+            Result.value=input  
+        }
+        function Result_countLowerNumber()
+        {
+            input=countLowerNumber(my_form.InputData.value)
+            Result.value=input  
+        }
+        function Result_printVowelsConsonants()
+        {
+            input=printVowelsConsonants(my_form.InputData.value)
+            Result.value=input  
+        }
+    </script>
+</head>
+<body>
+    <form name="my_form">
+        <h2>Using String Processing functions</h2>
+        <table>
+            <tr>
+                <td>
+                    <fieldset>
+                        <legend><h3>Input Data:</h3></legend>
+                        <textarea name="InputData" id="InputData"></textarea>
+                    </fieldset>
+                </td>
+                <td>
+                    <fieldset>
+                        <legend><h3>Result Data:</h3></legend>
+                        <textarea name="Result" id="Result" readonly></textarea>
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" onclick="Result_enterData()">Enter Data</button>
+                </td>
+                <td>
+                    <button type="button" onclick="Result_countUpperNumber()">Count the number of uppercase characters</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" onclick="Result_Uppercase()">Uppercase display</button>
+                </td>
+                <td>
+                    <button type="button" onclick="Result_oneWordPerLine()">Output one word per line</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" onclick="Result_Lowercase()">Lowercase display</button>
+                </td>
+                <td>
+                    <button type="button" onclick="Result_WordCount()">Word count</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" onclick="Result_countLowerNumber()">Count the number of lowercase characters</button>
+                </td>
+                <td>
+                    <button type="button" onclick="Result_printVowelsConsonants()">Print vowels, consonants</button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="button" onclick="window.open('https://www.w3.org/','_blank')">W3C's String Processing Website</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
