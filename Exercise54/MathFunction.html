@@ -1,0 +1,64 @@
+<html>
+<head>
+    <title>Exercise 54 - Trần Ngọc Bảo Vy</title>
+    <script src="math.js"></script>
+    <script type="text/javascript">
+        function call_max()
+        {
+            max_value=find_max(my_form.input_a.value, my_form.input_b.value, my_form.input_c.value)
+            td_result.innerText=max_value
+        }
+        function call_min()
+        {
+            min_value=find_min(my_form.input_a.value, my_form.input_b.value, my_form.input_c.value)
+            td_result.innerText=min_value
+        }
+        function call_sin()
+        {
+            sin_value=find_sin(my_form.input_a.value, my_form.input_b.value, my_form.input_c.value)
+            td_result.innerText=sin_value
+        }
+        function call_cos()
+        {
+            cos_value=find_cos(my_form.input_a.value, my_form.input_b.value, my_form.input_c.value)
+            td_result.innerText=cos_value
+        }
+        function call_pow()
+        {
+            pow_value=find_pow(my_form.input_a.value, my_form.input_b.value, my_form.input_c.value)
+            td_result.innerText=pow_value
+        }
+    </script>
+</head>
+<body>
+    <form name="my_form">
+        <table border="1" cellspacing="5px" cellpadding="5px">
+            <tr>
+                <td align="center">a:</td>
+                <td><input type="number" name="input_a" id="input_a"/></td>
+            </tr>
+            <tr>
+                <td align="center">b:</td>
+                <td><input type="number" name="input_b" id="input_b"/></td>
+            </tr>
+            <tr>
+                <td align="center">c:</td>
+                <td><input type="number" name="input_c" id="input_c"/></td>
+            </tr>
+            <tr>
+                <td align="center">Result:</td>
+                <td id="td_result"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="button" onclick="call_max()">MAX</button>
+                    <button type="button" onclick="call_min()">MIN</button>
+                    <button type="button" onclick="call_sin()">sin(a)</button>
+                    <button type="button" onclick="call_cos()">Cos(a)</button>
+                    <button type="button" onclick="call_pow()">a^b</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
