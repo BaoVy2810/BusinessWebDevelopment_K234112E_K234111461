@@ -1,0 +1,57 @@
+<html>
+<head>
+    <title>Exercise 54 - Trần Ngọc Bảo Vy</title>
+    <script src="Thequadraticequation.js"></script>
+    <script type="text/javascript">
+        function call_solution()
+        {
+            solution_value=find_solution(my_form.input_a.value, my_form.input_b.value, my_form.input_c.value)
+            td_result.innerText=solution_value
+        }
+    </script>
+</head>
+<body>
+    <form name="my_form">
+        <table border="1" cellspacing="5px" cellpadding="5px" width="30%">
+            <tr>
+                <td colspan="2"
+                    align="center"
+                    style="background-color: rgb(204, 236, 204);
+                            width: 100%; font-weight: bold;">
+                            The quadratic equation
+                </td>
+            </tr>
+            <tr>
+                <td align="center">a:</td>
+                <td><input type="number" name="input_a" id="input_a"/></td>
+            </tr>
+            <tr>
+                <td align="center">b:</td>
+                <td><input type="number" name="input_b" id="input_b"/></td>
+            </tr>
+            <tr>
+                <td align="center">c:</td>
+                <td><input type="number" name="input_c" id="input_c"/></td>
+            </tr>
+            <tr>
+                <td align="center">Result:</td>
+                <td id="td_result" style="color:red"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="2">
+                    <button type="button" 
+                            style="border-color: orange;
+                                    border-radius: 5px;" 
+                            onclick="call_solution()">
+                            Find solution
+                    </button>
+                    <input type="reset" value="Clear" 
+                            style="border-color: orange;
+                                    border-radius: 5px;">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
