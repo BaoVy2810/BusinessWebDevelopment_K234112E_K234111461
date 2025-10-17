@@ -1,0 +1,75 @@
+<html>
+<head>
+    <title> Exercise 66 - Trần Ngọc Bảo Vy</title>
+    <script type="text/javascript">
+        var txt="<student>"; 
+            txt += "<id>987456</id>"; 
+            txt += "<name>Marie Curie </name>"; 
+            txt += "<birthday>7/11/1867</birthday>"; 
+            txt += "<gender>Woman</gender>"; 
+            txt += "</student>"; 
+    </script>
+    <style>
+        tr:hover{
+            background-color:blue;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <table border="1" width="400" id="table">
+        <tr>
+            <td colspan="2" align="center"
+                style="background-color: rgb(169, 211, 169);"> 
+                Student Information
+            </td>
+        </tr>
+        <tr>
+            <td>Student ID:</td>
+            <td id="td_student_id"></td>
+        </tr>
+        <tr>
+            <td>Student Name:</td>
+            <td id="td_student_name"></td>
+        </tr>
+        <tr>
+            <td>Birthday:</td>
+            <td id="td_birthday"></td>
+        </tr>
+        <tr>
+            <td>Gender:</td>
+            <td id="td_gender"></td>
+        </tr>
+    </table>
+    <script type="text/javascript">
+        var parser = new DOMParser(); 
+        var xmlDoc = parser.parseFromString(txt,"text/xml"); 
+        id=xmlDoc.getElementsByTagName("id")[0].childNodes[0].nodeValue;
+        td_student_id.innerText=id
+        name=xmlDoc.getElementsByTagName("name")[0].childNodes[0].nodeValue;
+        td_student_name.innerText=name
+        birthday=xmlDoc.getElementsByTagName("birthday")[0].childNodes[0].nodeValue;
+        td_birthday.innerText=birthday
+        gender=xmlDoc.getElementsByTagName("gender")[0].childNodes[0].nodeValue;
+        td_gender.innerText=gender
+
+        document.getElementById("td_student_id").innerText=id
+        document.getElementById("td_student_name").innerText=name
+        document.getElementById("td_birthday").innerText=birthday
+        document.getElementById("td_gender").innerText=gender
+
+        const rows = document.querySelectorAll("#table tr");
+            rows.forEach(row => {
+                row.addEventListener("mouseover", () => {
+                row.style.backgroundColor = "blue";
+                row.style.color = "white";
+                });
+                row.addEventListener("mouseout", () => {
+                row.style.backgroundColor = "white";
+                row.style.color = "black";
+                });
+            });
+    </script>
+    
+</body>
+</html>
